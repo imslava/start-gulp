@@ -29,10 +29,10 @@ function browsersync() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
-		'app/js/vendor/fancybox.js',
-		'app/js/vendor/jquery.inputmask.min.js',
-		'app/js/vendor/jquery.validate.min.js',
-		'app/js/vendor/slick.min.js',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+		'node_modules/slick-carousel/slick/slick.min.js',
+		'node_modules/inputmask/dist/jquery.inputmask.min.js',
+		'node_modules/jquery-validation/dist/jquery.validate.min.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('app.min.js'))
